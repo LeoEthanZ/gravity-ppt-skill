@@ -15,6 +15,18 @@ const root = dirname(file);
 const errors = [];
 const warnings = [];
 
+function lastCssValue(selector, property) {
+  const escaped = selector.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const blockRe = new RegExp(`${escaped}\\s*\\{([^}]*)\\}`, 'g');
+  let value = null;
+  for (const block of html.matchAll(blockRe)) {
+    const propRe = new RegExp(`(?:^|;)\\s*${property.replace('-', '\\-')}\\s*:\\s*([^;!}]+)(?:\\s*!important)?`, 'i');
+    const match = block[1].match(propRe);
+    if (match) value = match[1].trim().toLowerCase();
+  }
+  return value;
+}
+
 const slideRe = /<section\b[^>]*class="[^"]*\bslide\b[^"]*"[^>]*>[\s\S]*?<\/section>/g;
 const slides = [...html.matchAll(slideRe)].map((match, idx) => ({
   idx: idx + 1,
@@ -27,10 +39,19 @@ if (!isTemplate && html.includes('<!-- SLIDES_HERE -->')) {
   errors.push('Template placeholder <!-- SLIDES_HERE --> is still present.');
 }
 
-const firstThree = slides.slice(0, 3).map((slide) => slide.html);
-if (!firstThree[0]?.includes('class="canvas cover"')) errors.push('Slide 1 should be the cover page.');
-if (!firstThree[1]?.includes('index-title')) errors.push('Slide 2 should be the index page.');
-if (!firstThree[2]?.includes('section-page')) errors.push('Slide 3 should be the section page.');
+if (!slides[0]?.html.includes('class="canvas cover"')) errors.push('Slide 1 should be the cover page.');
+const hasLessonPage =
+  slides[1]?.html.includes('section-page') &&
+  slides[1]?.html.includes('section-name') &&
+  /Lesson\s*\d+/i.test(slides[1]?.html ?? '');
+const indexSlide = slides[hasLessonPage ? 2 : 1];
+const firstSectionSlide = slides[hasLessonPage ? 3 : 2];
+if (!indexSlide?.html.includes('index-title')) {
+  errors.push(hasLessonPage ? 'Slide 3 should be the index page when an optional Lesson page is inserted after the cover.' : 'Slide 2 should be the index page.');
+}
+if (!firstSectionSlide?.html.includes('section-page')) {
+  errors.push(hasLessonPage ? 'Slide 4 should be the first section page when an optional Lesson page is inserted after the cover.' : 'Slide 3 should be the section page.');
+}
 
 const asciiCount = (html.match(/class="ascii-bg"/g) || []).length;
 const sectionPageCount = slides.filter((slide) => slide.html.includes('section-page')).length;
@@ -38,10 +59,11 @@ const expectedAsciiCount = 1 + sectionPageCount;
 if (asciiCount !== expectedAsciiCount) {
   errors.push(`Expected ${expectedAsciiCount} ASCII backgrounds (cover + section pages), found ${asciiCount}.`);
 }
-if (firstThree[1]?.includes('ascii-bg')) errors.push('Index page should stay static and must not contain ascii-bg.');
+if (indexSlide?.html.includes('ascii-bg')) errors.push('Index page should stay static and must not contain ascii-bg.');
 
 const allowed = new Set(Array.from({ length: 18 }, (_, i) => `C${String(i + 1).padStart(2, '0')}`));
-const contentSlides = slides.slice(3);
+const fixedSlideCount = hasLessonPage ? 4 : 3;
+const contentSlides = slides.slice(fixedSlideCount);
 
 if (!isTemplate && contentSlides.length === 0) {
   errors.push('Final deck has no content slides after the fixed cover/index/section pages.');
@@ -66,8 +88,29 @@ contentSlides.forEach((slide) => {
   }
 });
 
-if (!/\.summary\s*\{[\s\S]*?bottom:\s*43\.5px/.test(html)) {
-  errors.push('CSS .summary must use bottom:43.5px.');
+if (!html.includes('--deck-width: 1920px') || !html.includes('--deck-height: 1080px')) {
+  errors.push('Gravity canvas must use 1920x1080.');
+}
+if (!html.includes('const baseW = 1920') || !html.includes('const baseH = 1080')) {
+  errors.push('Resize scaling must use a 1920x1080 base canvas.');
+}
+if (!/\.summary\s*\{[\s\S]*?bottom:\s*52\.2px/.test(html)) {
+  errors.push('CSS .summary must use bottom:52.2px.');
+}
+
+for (const selector of ['.chapter', '.section-sub']) {
+  const nowrap = lastCssValue(selector, 'white-space');
+  const overflow = lastCssValue(selector, 'overflow');
+  const ellipsis = lastCssValue(selector, 'text-overflow');
+  if (nowrap !== 'nowrap') errors.push(`CSS ${selector} must end with white-space:nowrap.`);
+  if (overflow !== 'hidden') errors.push(`CSS ${selector} must end with overflow:hidden.`);
+  if (ellipsis !== 'ellipsis') errors.push(`CSS ${selector} must end with text-overflow:ellipsis.`);
+}
+if (!/function\s+fitChromeTitles\s*\(/.test(html)) {
+  errors.push('Gravity deck must retain fitChromeTitles() for long single-line chapter titles.');
+}
+if (!/size\s*>\s*34/.test(html) || !/fontSize\s*=\s*['"]40px['"]/.test(html)) {
+  errors.push('fitChromeTitles() must fit .chapter titles from 40px down to 34px before ellipsis.');
 }
 
 if (!html.includes('#9268f8')) warnings.push('Theme color #9268f8 not found.');

@@ -11,7 +11,7 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
@@ -32,7 +32,7 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
@@ -53,13 +53,13 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
       <h2 class="page-title">03 图文 · 上文下图</h2>
       <div class="short-rule"></div>
-      <div class="content-grid" style="grid-template-rows: auto 1fr"><div class="card" style="min-height:0"><h3>先把问题讲清楚</h3><p>上方放一段简洁说明，底部用宽图承接重点画面，适合截图、流程图、产品图。</p></div><div class="photo-box" style="min-height:330px"><span>Wide Image</span></div></div>
+      <div class="content-grid" style="grid-template-rows: auto 1fr"><div class="card" style="min-height:0"><h3>先把问题讲清楚</h3><p>上方放一段简洁说明，底部用宽图承接重点画面，适合截图、流程图、产品图。</p></div><div class="photo-box" style="min-height:396px"><span>Wide Image</span></div></div>
     </div>
   </div>
 </section>
@@ -74,7 +74,7 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
@@ -95,7 +95,7 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
@@ -116,7 +116,7 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
@@ -137,7 +137,7 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
@@ -158,7 +158,7 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
@@ -179,7 +179,7 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
@@ -200,7 +200,7 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
@@ -221,7 +221,7 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
@@ -242,7 +242,7 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
@@ -263,13 +263,13 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
       <h2 class="page-title">13 大图 · 主视觉</h2>
       <div class="short-rule"></div>
-      <div class="content-grid" style="grid-template-rows:1fr auto"><div class="photo-box" style="min-height:500px"><span>Main Visual</span></div><p class="small muted">用于承载核心截图、产品场景、主视觉照片或证据图，画面尽量留白。</p></div>
+      <div class="content-grid" style="grid-template-rows:1fr auto"><div class="photo-box" style="min-height:600px"><span>Main Visual</span></div><p class="small muted">用于承载核心截图、产品场景、主视觉照片或证据图，画面尽量留白。</p></div>
     </div>
   </div>
 </section>
@@ -284,7 +284,7 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
@@ -305,7 +305,7 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
@@ -326,13 +326,13 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
       <h2 class="page-title">16 收束结论</h2>
       <div class="short-rule"></div>
-      <div class="content-grid" style="display:block"><p class="quote" style="max-width:1320px">最后只留下一个判断、三个行动和一个能被记住的短语。</p><div class="hairline" style="margin:52px 0"></div><div class="content-grid three-col" style="position:static"><div class="card"><h3>判断</h3><p>一句话说明方向。</p></div><div class="card"><h3>行动</h3><p>列出下一步动作。</p></div><div class="card purple"><h3>记忆点</h3><p>留下可传播表达。</p></div></div></div>
+      <div class="content-grid" style="display:block"><p class="quote" style="max-width:1584px">最后只留下一个判断、三个行动和一个能被记住的短语。</p><div class="hairline" style="margin:62.4px 0"></div><div class="content-grid three-col" style="position:static"><div class="card"><h3>判断</h3><p>一句话说明方向。</p></div><div class="card"><h3>行动</h3><p>列出下一步动作。</p></div><div class="card purple"><h3>记忆点</h3><p>留下可传播表达。</p></div></div></div>
     </div>
   </div>
 </section>
@@ -347,7 +347,7 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
@@ -368,7 +368,7 @@ Use these complete slide sections by copying one or more blocks into `assets/tem
           <p class="chapter">章节名称</p>
           <p class="section-sub">Section ｜ 小节名称</p>
           <div class="title-rule"></div>
-          <p class="summary">要点总结：要点1｜要点2｜要点3｜要点4｜要点5</p>
+          <p class="summary"></p>
           <div class="content-logo" aria-label="万有引力 Natural Solution"><img class="a" src="assets/content-logo-a.svg" alt=""><img class="b" src="assets/content-logo-b.svg" alt=""><img class="c" src="assets/content-logo-c.svg" alt=""></div>
         </div>
     <div class="main">
